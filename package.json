@@ -1,0 +1,38 @@
+{
+  "name": "673_project",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "vitebuild": "vite build",
+
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@types/uuid": "^8.3.3",
+		"@vueuse/core": "^7.3.0",
+		"axios": "^0.24.0",
+		"mongodb": "^4.2.1",
+		"pinia": "^2.0.6",
+		"primeicons": "^5.0.0",
+		"primevue": "^3.9.1",
+		"uuid": "^8.3.2",
+		"vue-router": "~4",
+		"express": "^4.17.1",
+    "express-handlebars": "^5.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.10.1",
+		"esbuild": "^0.14.2",
+		"vite": "^2.6.14",
+		"vite-plugin-windicss": "^1.5.1",
+		"vue": "3.2.23",
+    "@azure/functions": "^3.0.0",
+    "windicss": "^3.2.1",
+    "typescript": "^4.0.0"
+  }
+}
