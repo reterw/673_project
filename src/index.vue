@@ -12,13 +12,16 @@
         </span>
       </span>
       <div class="col-start-10 col-span-3 flex justify-end gap-5 cursor-pointer p-2">
-        <div
+        <!-- <div
           class="flex flex-row items-center gap-2 hover:bg-dark-300 rounded-xl p-2"
           @click="createVote"
         >
           <i class="pi pi-pencil" style="fontSize:1rem;"></i>
           <div class="text-xl lg:block hidden">create vote</div>
-        </div>
+        </div> -->
+        <Menubar class="h-10 p-0 mt-2" :model="items">
+              <router-link :to="item.to" custom />
+        </Menubar>
         <div
           v-if="!user.isLogined"
           class="flex flex-row items-center gap-2 hover:bg-dark-300 rounded-xl p-2"
@@ -108,6 +111,28 @@ import { useUserInfo } from "./stores/store";
 
 // import banner from "./banner.png";
 export default defineComponent({
+  data() {
+    return {
+    items: [
+        {
+            label:'Survey',
+            icon:'pi pi-fw pi-pencil',
+            items:[
+              {
+                  label:'Create Survey',
+                  icon:'pi pi-fw pi-plus',
+                  to: '/create-survey'
+              },
+              {
+                label:'Survey List',
+                icon:'pi pi-list',
+                to: '/survey-list'
+              }
+            ]
+        }
+        ]
+    }
+  },
   props:{
 
   },
@@ -129,16 +154,16 @@ export default defineComponent({
         alert('success');
       },
       user,
-      items: [
-        {
-          label: '我的',
-          icon: 'pi pi-ban'
-        },
-        {
-          label: '草',
-          icon: 'pi pi-cloud'
-        }
-      ],
+      // items: [
+      //   {
+      //     label: '我的',
+      //     icon: 'pi pi-ban'
+      //   },
+      //   {
+      //     label: '草',
+      //     icon: 'pi pi-cloud'
+      //   }
+      // ],
       push,
       changeIcon() {
         console.log(iconVoted.value);

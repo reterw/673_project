@@ -1,0 +1,2 @@
+
+export const MONGO_URL = `mongodb://siqiw547:uu9eYbQzN96PYNFrScNWtEdcNdcInBROYCRfAStwEQ4npNumz8tOYIfPHYYE9B1vaEcCZYxX10w9qXW58M9mdQ==@siqiw547.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&maxIdleTimeMS=120000&appName=@siqiw547@`;

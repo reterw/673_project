@@ -1,5 +1,6 @@
 {
 	"scripts": {
+		"start": "node deploy/app.js",
 		"dev": "vite",
 		"build": "vite build",
 		"start:server": "fun local start --template template.dev.yml",
