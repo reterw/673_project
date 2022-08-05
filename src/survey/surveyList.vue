@@ -22,9 +22,14 @@
                 <div class="mb-5">
                     {{item.title}}
                 </div>
-                <div class="mb-5" :key="option" v-for="option in item.options">
+
+
+                <!-- no answer -->
+                <!-- <div class="mb-5" :key="option" v-for="option in item.options">
                     {{option}}
-                </div>
+                </div> -->
+
+
             </div>
             <!-- <div
                 v-for="(answer, i) in e.answers"
