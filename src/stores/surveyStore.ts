@@ -15,13 +15,11 @@ export const useSurveyStore = defineStore('survey-store', () => {
 
     async function getAllSurveys() {
         surveyForm.value = await (await fetch(import.meta.env.VITE_GET_SURVEY_URL, { method: "GET", headers: { 'Content-Type': 'application/json' }, mode: 'cors' })).json()
-        console.log(surveyForm, 233)
         return surveyForm
     }
 
     async function getAllSurveysResult() {
         surveyResult.value = await (await fetch(import.meta.env.VITE_SURVEY_RESULT_URL, { method: "GET", headers: { 'Content-Type': 'application/json' }, mode: 'cors' })).json()
-        console.log(surveyResult, 233)
         return surveyResult
     }
 

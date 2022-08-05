@@ -2,8 +2,8 @@
   <div class="h-full grid grid-cols-12 text-light-50">
     <div header class="fixed z-10 grid grid-cols-12 w-full sm:p-3 p-0 h-25 bg-dark-900">
       <div class="px-2 col-span-2 flex gap-3 items-center">
-        <i class="pi pi-bell" style="fontSize: 2rem"></i>
-        <div class="text-xl lg:block hidden">We Vote</div>
+        <i class="pi pi-bolt" style="fontSize: 2rem"></i>
+        <div class="text-xl lg:block hidden">Survey Maker</div>
       </div>
       <span class="col-start-4 col-span-6 flex justify-center">
         <span class="p-input-icon-left w-200 flex items-center">
@@ -77,7 +77,7 @@
 
           <a
             class="flex flex-row gap-5 items-center hover:bg-dark-300 rounded-xl cursor-pointer p-2"
-            href="https://github.com/reterw/vvote"
+            href="https://github.com/reterw/673_project"
             
           >
             
@@ -123,11 +123,11 @@ export default defineComponent({
                   icon:'pi pi-fw pi-plus',
                   to: '/create-survey'
               },
-              {
-                label:'Survey List',
-                icon:'pi pi-list',
-                to: '/survey-list'
-              }
+              // {
+              //   label:'Survey List',
+              //   icon:'pi pi-list',
+              //   to: '/survey-list'
+              // }
             ]
         }
         ]
@@ -177,6 +177,7 @@ export default defineComponent({
         }
       },
       login() {
+        
         window.location.href = `${GITHUB_LOGIN_URL}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URL}&state=${deviceId}`
       },
   

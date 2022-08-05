@@ -145,7 +145,23 @@ export default defineComponent({
                         ((selectedType?.value?.value === 0 || selectedType?.value?.value === 1) 
                         && choices.value.length === 0)
                         || (hasTitle.length > 0 && selectedType?.value?.value === -1) 
-                        || (surveyList.value.length === 0 && selectedType?.value?.value !== -1)) {
+                        || (surveyList.value.length === 0 && selectedType?.value?.value !== -1)
+                        || (selectedType?.value?.value === 1 && choices.value.length === 1)) 
+                    {
+                        if (surveyList.value.length === 0 && selectedType?.value?.value !== -1) {
+                            alert('Please input survey name first!')
+                        } else if (hasTitle.length > 0 && selectedType?.value?.value === -1) {
+                            alert('One survey name only!')
+                        }
+                        else if (!title.value) {
+                            alert('Please input title!')
+                        } else if ((selectedType?.value?.value === 0 || selectedType?.value?.value === 1) 
+                        && choices.value.length === 0) {
+                            alert('Please input choice!')
+                        } else if (selectedType?.value?.value === 1
+                        && choices.value.length === 1) {
+                            alert('Please input more than one choice for multiple type!')
+                        }
                     return
                 }
                 surveyList.value.push({

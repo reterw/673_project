@@ -31,6 +31,8 @@ import surveyList from "./survey/surveyList.vue";
 import surveySubmit from "./survey/surveySubmit.vue";
 import Menubar from 'primevue/menubar';
 import surveyTemplate from "./survey/surveyTemplate.vue";
+import surveyDetail from "./survey/surveyDetail.vue";
+import surveyStatistics from "./survey/surveyStatistics.vue";
 
 const router = createRouter({
     history: createWebHashHistory(),
@@ -41,7 +43,10 @@ const router = createRouter({
         { path: '/admin-page', component:surveyTemplate},
         { path: '/create-survey', component:createSurvey},
         { path: '/survey-list', component:surveyList},
-        { path: '/survey/:id', component:surveySubmit}
+        { path: '/survey/:id', component:surveySubmit},
+        { path: '/survey-detail/:id', component:surveyDetail},
+        { path: '/survey-statistics/:id', component:surveyStatistics }
+
     ]
 })
 router.afterEach(

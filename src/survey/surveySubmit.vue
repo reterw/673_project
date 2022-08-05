@@ -71,7 +71,7 @@ export default defineComponent({
                     })
                 } else if (item.type === SurveyQuestionnaireItemType.MultipleChoice) {
                     answerItems.push({
-                        answer: item.selectedChoices.join()
+                        answer: item.selectedChoices?.join()
                     })
                 } else if (item.type === SurveyQuestionnaireItemType.BlankFill) {
                     answerItems.push({
