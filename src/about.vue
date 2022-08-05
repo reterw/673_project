@@ -41,7 +41,7 @@
                 <img src="./image/673/5-single2.jpg" />
                 <br />
                 <label class="text-2xl">use the similar way to add the multiple choice and short answer question</label>
-                <img src="./image/673/6-muitiple.jpg" />
+                <img src="./image/673/6-multiple.jpg" />
                 <img src="./image/673/7-input.jpg" />
                 <br />
                 <label class="text-2xl">press Create publish the survey</label>
