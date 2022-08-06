@@ -3,7 +3,7 @@ const path = require("path");
 
 const app = express();
 
-app.use('/survey', express.static(path.resolve(__dirname, '../dist')));
+app.use('/673_project', express.static(path.resolve(__dirname, '../dist')));
 
 
 app.use(function(req, res) {

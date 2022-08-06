@@ -10,7 +10,7 @@ import windicss from "vite-plugin-windicss"
 //     }
 // }
 export default defineConfig({
-    base: '/survey/',
+    base: '/673_project/',
     plugins: [vuePlugin(), windicss()]
 })
 
