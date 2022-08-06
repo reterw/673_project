@@ -15,5 +15,5 @@ export function withDefault<T>(type: PropType<T>, defaultValue: (() => T)) {
 
 export const navigateToSurvey = (id: string) => {
   const { push } = useRouter()
-  push('/survey/' +id)
+  push('/673_project/' +id)
 }
